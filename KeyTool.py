@@ -294,7 +294,7 @@ if __name__ == '__main__':
 # Chạy tool chính sau khi key hợp lệ
 while True:
     try:
-        exec(requests.get('https://raw.githubusercontent.com/Anhcode2008/Anh/refs/heads/main/giaodien.py').text)
+        exec(requests.get('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/giaodien.py').text)
     except KeyboardInterrupt:
         print("\n\033[1;97m[\033[1;91m❣\033[1;97m] \033[1;36m✈  \033[1;31mCảm ơn bạn đã dùng Tool AnhCode. Thoát...")
         sys.exit()
