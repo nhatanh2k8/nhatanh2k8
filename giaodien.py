@@ -128,6 +128,6 @@ while True:
         run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/anhcode-share.py') 
     elif chon == '3.6':
         run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/Ngl.py')
-        else:
+    else:
         print(f"{dev} Không có lựa chọn này!")
         sleep(2)
