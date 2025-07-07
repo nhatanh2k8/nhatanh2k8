@@ -102,6 +102,7 @@ while True:
     print(f"\033[1;97m[\033[1;32m*\033[1;97m] \033[1;33m3.3\033[1;97m: \033[1;34mTool Reg Fb\033[1;32m[Online]")
     print(f"\033[1;97m[\033[1;32m*\033[1;97m] \033[1;33m3.4\033[1;97m: \033[1;34mTool Reg Mail\033[1;32m[Online]")
     print(f"\033[1;97m[\033[1;32m*\033[1;97m] \033[1;33m3.5\033[1;97m: \033[1;34mTool Share Fb Max Speed\033[1;32m[Online]")
+     print(f"\033[1;97m[\033[1;32m*\033[1;97m] \033[1;33m3.6\033[1;97m: \033[1;34mTool Spam Ngl\033[1;32m[Online]")
     print(f"\033[97m════════════════════════════════════════════════════════")
 
     chon = input('\033[1;91m┌─╼\033[1;97m[\033[1;91m<\033[1;97m/\033[1;91m>\033[1;97m]--\033[1;91m>\033[1;97m Nhập lựa chọn \n\033[1;91m└─╼\033[1;91m✈ \033[1;33m : ')
@@ -125,6 +126,8 @@ while True:
         run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/anhcode-regmail.py')
     elif chon == '3.5':
         run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/anhcode-share.py')
+    elif chon == '3.6':
+        run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/Ngl.py')
     else:
         print(f"{dev} Không có lựa chọn này!")
         sleep(2)
