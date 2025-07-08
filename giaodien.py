@@ -113,7 +113,7 @@ while True:
     elif chon == '1.1':
         run_php_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/anhcode.php_10.php')
     elif chon == '2':
-        run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/tds.py')
+        run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/tds/refs/heads/main/tds.py')
     elif chon == '3':
         run_php_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/fb.php')
     elif chon == '3.1':
