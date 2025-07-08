@@ -121,11 +121,11 @@ while True:
     elif chon == '3.2':
         run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/enc.py')
     elif chon == '3.3':
-        run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/anhcode-regfb.py')
+        run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/regfb.py')
     elif chon == '3.4':
-        run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/anhcode-regmail.py')
+        run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/regmail.py')
     elif chon == '3.5':
-        run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/anhcode-share.py') 
+        run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/anhcod-share.py') 
     elif chon == '3.6':
         run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/Ngl.py')
     else:
