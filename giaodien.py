@@ -87,8 +87,9 @@ while True:
     print("\033[1;37m╔══════════════════════╗")
     print("\033[1;37m║  \033[1;32mTool Tương Tác Chéo \033[1;37m║")
     print("\033[1;37m╚══════════════════════╝")
-    print(f"\033[1;97m[\033[1;32m*\033[1;97m] \033[1;33m1 \033[1;97m: \033[1;34mTool TTC Facebook \033[1;32m[Online]")
+    print(f"\033[1;97m[\033[1;32m*\033[1;97m] \033[1;33m1 \033[1;97m: \033[1;34mTool TTC Facebook login Token\033[1;32m[Online]")
     print(f"\033[1;97m[\033[1;32m*\033[1;97m] \033[1;33m1.1 \033[1;97m: \033[1;34mTool TTC Instagram \033[1;32m[Online]")
+    print(f"\033[1;97m[\033[1;32m*\033[1;97m] \033[1;33m1.2 \033[1;97m: \033[1;34mTool TTC Facebook login Cookie \033[1;32m[Online]")
     print("\033[1;37m╔══════════════════════╗")
     print("\033[1;37m║  \033[1;32mTool TraoDoiSub.com \033[1;37m║")
     print("\033[1;37m╚══════════════════════╝")
@@ -111,7 +112,9 @@ while True:
     if chon == '1':
         run_php_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/anhcode1.php')
     elif chon == '1.1':
-        run_php_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/anhcode.php_10.php')
+        run_php_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/anhcode.php_10.php')  
+    elif chon == '1.2':
+        run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/anhcode-ttc.py')
     elif chon == '2':
         run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/tds/refs/heads/main/tds.py')
     elif chon == '3':
