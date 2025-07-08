@@ -1,11 +1,15 @@
 
 import os, re, time, queue, shutil, ctypes, random, threading, requests, json
-from tqdm import tqdm
 from getpass import getpass
 from urllib.parse import urlparse, urlencode, parse_qs, quote
 from typing import Dict, List, Optional, Tuple
 from colorama import init, Fore, Style
 from pystyle import Add, Center, Anime, Colors, Colorate, Write, System
+def print_slow(text, delay=0.01):
+    for char in text:
+        print(char, end='', flush=True)
+        time.sleep(delay)
+    print()
 class zNGL:
     def __init__(self, _username: str = "", _threads: int = 1, _question: str = ""):
         self.messages: List[str] = []
@@ -179,45 +183,37 @@ class zNGL:
 Press [ENTER] to continue...
 """
 
-    def banner_logo(self):
-    colors = [
-        "\033[1;31m", "\033[1;33m", "\033[1;32m",
-        "\033[1;36m", "\033[1;34m", "\033[1;35m", "\033[1;37m"
-    ]
+    def banner(self):
+        colors = [
+            "\033[1;31m", "\033[1;33m", "\033[1;32m",
+            "\033[1;36m", "\033[1;34m", "\033[1;35m", "\033[1;37m"
+        ]
 
-    logo = [
-        " █████╗ ███╗   ██╗██╗  ██╗ ██████╗  ██████╗ ██████╗ ███████╗",
-        "██╔══██╗████╗  ██║╚██╗██╔╝██╔═══██╗██╔═══██╗██╔══██╗██╔════╝",
-        "███████║██╔██╗ ██║ ╚███╔╝ ██║   ██║██║   ██║██████╔╝█████╗  ",
-        "██╔══██║██║╚██╗██║ ██╔██╗ ██║   ██║██║   ██║██╔═══╝ ██╔══╝  ",
-        "██║  ██║██║ ╚████║██╔╝ ██╗╚██████╔╝╚██████╔╝██║     ███████╗",
-        "╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝     ╚══════╝",
-        "                   🅐🅝🅗🅒🅞🅓🅔 . 🅣🅔🅐🅜"
-    ]
+        logo = [
+            " █████╗ ███╗   ██╗██╗  ██╗ ██████╗  ██████╗ ██████╗ ███████╗",
+            "██╔══██╗████╗  ██║╚██╗██╔╝██╔═══██╗██╔═══██╗██╔══██╗██╔════╝",
+            "███████║██╔██╗ ██║ ╚███╔╝ ██║   ██║██║   ██║██████╔╝█████╗  ",
+            "██╔══██║██║╚██╗██║ ██╔██╗ ██║   ██║██║   ██║██╔═══╝ ██╔══╝  ",
+            "██║  ██║██║ ╚████║██╔╝ ██╗╚██████╔╝╚██████╔╝██║     ███████╗",
+            "╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝     ╚══════╝",
+            "                   🅐🅝🅗🅒🅞🅓🅔 . 🅣🅔🅐🅜"
+        ]
 
-    os.system("cls" if os.name == "nt" else "clear")
-    for i, line in enumerate(logo):
-        print(colors[i % len(colors)], end="")
-        print_slow(line, 0.0015)
-    print("\033[0m")
+        os.system("cls" if os.name == "nt" else "clear")
+        for i, line in enumerate(logo):
+            print(colors[i % len(colors)], end="")
+            print_slow(line, 0.0015)
+        print("\033[0m")
 
-    print("\033[1;33m")
-    print_slow("═════════════ THÔNG TIN LIÊN HỆ ═════════════", 0.002)
-    print("\033[0m")
-    print("\033[1;36m Tele:     \033[0m", end=""); print_slow("https://t.me/anhcodeclick", 0.002)
-    print("\033[1;35m Zalo:     \033[0m", end=""); print_slow("https://zalo.me/g/nsilph288", 0.002)
-    print("\033[1;31m YouTube:  \033[0m", end=""); print_slow("https://youtube.com/@anhhcode", 0.002)
-    print("\033[1;31m" + "─" * 50 + "\033[0m")
+        print("\033[1;33m")
+        print_slow("═════════════ THÔNG TIN LIÊN HỆ ═════════════", 0.002)
+        print("\033[0m")
+        print("\033[1;36m Tele:     \033[0m", end=""); print_slow("https://t.me/anhcodeclick", 0.002)
+        print("\033[1;35m Zalo:     \033[0m", end=""); print_slow("https://zalo.me/g/nsilph288", 0.002)
+        print("\033[1;31m YouTube:  \033[0m", end=""); print_slow("https://youtube.com/@anhhcode", 0.002)
+        print("\033[1;31m" + "─" * 50 + "\033[0m")
 
-        lines = text.strip("\n").split("\n")
-        colors = [Fore.CYAN, Fore.GREEN, Fore.YELLOW, Fore.MAGENTA, Fore.RED]
-        _terminal = shutil.get_terminal_size().columns
-        print("\n" * 1)
-        print(f"{self.NAME_TOOL} {self.VERSION_TOOL}".rjust(100))
-        print("")
-        for color, line in zip(colors, lines):
-            padding = (_terminal - len(line)) // 2
-            print(color + " " * padding + line)
+        
 
     def change_title(self, arg):
         if os.name == "nt":
