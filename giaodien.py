@@ -105,7 +105,10 @@ while True:
     print(f"\033[1;97m[\033[1;32m*\033[1;97m] \033[1;33m3.5\033[1;97m: \033[1;34mTool Share Fb Max Speed \033[1;32m[Online]")
     print(f"\033[1;97m[\033[1;32m*\033[1;97m] \033[1;33m3.6\033[1;97m: \033[1;34mTool Spam Ngl \033[1;32m[Online]")
     print(f"\033[97m════════════════════════════════════════════════════════")
-
+    print("\033[1;37m╔══════════════════════╗")
+    print("\033[1;37m║  \033[1;32mTool Golike \033[1;37m║")
+    print("\033[1;37m╚══════════════════════╝")
+    print(f"\033[1;97m[\033[1;32m*\033[1;97m] \033[1;33m4 \033[1;97m: \033[1;34mTool Golike TikTok \033[1;32m[Online]")
     chon = input('\033[1;91m┌─╼\033[1;97m[\033[1;91m<\033[1;97m/\033[1;91m>\033[1;97m]--\033[1;91m>\033[1;97m Nhập lựa chọn \n\033[1;91m└─╼\033[1;91m✈ \033[1;33m : ')
     print('\033[1;39m───────────────────────────────────────────────────────────')
 
@@ -131,6 +134,8 @@ while True:
         run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/anhcod-share.py') 
     elif chon == '3.6':
         run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/Ngl.py')
+    elif chon == '4':
+        run_py_code_from_url('https://raw.githubusercontent.com/nhatanh2k8/nhatanh2k8/refs/heads/main/golike1.py')
     else:
         print(f"{dev} Không có lựa chọn này!")
         sleep(2)
