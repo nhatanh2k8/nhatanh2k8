@@ -375,4 +375,4 @@ print("\033[1;35m╚════════════════════
 headers = {
     'Accept': 'application/json, text/plain, */*',
     'Content-Type': 'application/json;charset=utf-8',
-  
+}  
